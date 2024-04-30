@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+        }
+
+        .groceryshop-container {
+            width: 100%;
+            display: flex;
+            overflow: auto;
+            min-height: 100vh;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .groceryshop-groceryshop {
+            width: 100%;
+            height: 1024px;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            background: linear-gradient(211deg, rgba(221, 255, 188, 1) 3%, rgba(255, 241, 214, 1) 46%, rgba(143, 196, 189, 1) 79%);
+            align-items: flex-start;
+            flex-shrink: 0;
+            border-radius: 35px;
+        }
+
+        .groceryshop-text {
+            top: 69.7280044555664px;
+            left: 576.6969604492188px;
+            color: rgba(0, 0, 0, 1);
+            width: 139px;
+            height: auto;
+            position: absolute;
+            font-size: 25px;
+            font-style: Regular;
+            text-align: left;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: normal;
+            font-stretch: normal;
+            text-decoration: none;
+        }
+
+        .groceryshop-text02 {
+            top: 164.72799682617188px;
+            left: 576.6969604492188px;
+
+            color: rgba(0, 0, 0, 1);
+            width: 103px;
+            height: auto;
+            position: absolute;
+            font-size: 25px;
+            font-style: Regular;
+            text-align: left;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: normal;
+            font-stretch: normal;
+            text-decoration: none;
+        }
+
+        .groceryshop-text04 {
+            top: 545.72802734375px;
+            left: 576.6969604492188px;
+
+            color: rgba(0, 0, 0, 1);
+            width: 234px;
+            height: auto;
+            position: absolute;
+            font-size: 25px;
+            font-style: Regular;
+            text-align: left;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: normal;
+            font-stretch: normal;
+            text-decoration: none;
+        }
+
+
+        .groceryshop-text06 {
+            top: 638.72802734375px;
+            left: 576.6969604492188px;
+            color: rgba(0, 0, 0, 1);
+            width: 287px;
+            height: auto;
+            position: absolute;
+            font-size: 25px;
+            font-style: Regular;
+            text-align: left;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: normal;
+            font-stretch: normal;
+            text-decoration: none;
+        }
+
+
+
+        .groceryshop-text10 {
+            top: 257.7279968261719px;
+            left: 576.6969604492188px;
+            color: rgba(0, 0, 0, 1);
+            width: 152px;
+            height: auto;
+            position: absolute;
+            font-size: 25px;
+            font-style: Regular;
+            text-align: left;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: normal;
+            font-stretch: normal;
+            text-decoration: none;
+        }
+
+
+        .groceryshop-text12 {
+            top: 349.7281188964844px;
+            left: 576.6969604492188px;
+            color: rgba(0, 0, 0, 1);
+            width: 117px;
+            height: auto;
+            position: absolute;
+            font-size: 25px;
+            font-style: Regular;
+            text-align: left;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: normal;
+            font-stretch: normal;
+            text-decoration: none;
+        }
+
+        .groceryshop-text14 {
+            top: 447.7281188964844px;
+            left: 576.6969604492188px;
+            color: rgba(0, 0, 0, 1);
+            width: 167px;
+            height: auto;
+            position: absolute;
+            font-size: 25px;
+            font-style: Regular;
+            text-align: left;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: normal;
+            font-stretch: normal;
+            text-decoration: none;
+        }
+        .text {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            font-size: 15px;
+        }
+
+        .text1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            font-size: 15px;
+        }
+
+        .text2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            font-size: 15px;
+        }
+
+        .text3 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            font-size: 15px;
+        }
+
+        .text4 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            font-size: 15px;
+        }
+
+        .text5 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            font-size: 15px;
+        }
+        .panel {
+            height: 35px;
+            background-color: #222f3d;
+            display: flex;
+            color: white;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .panel-ops p {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        .panel-ops {
+            width: 70%;
+            font-size: 0.85rem;
+        }
+
+        .panel-deals {
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        .groceryshop-text08 {
+            top: 779.7279663085938px;
+            left: 576.6969604492188px;
+            color: rgba(0, 0, 0, 1);
+            position: relative;
+        }
+
+        input {
+            width: 316px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 8px;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: green;
+            width: 316px;
+            height: 40px;
+            color: white;
+            border-radius: 8px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="panel">
+        <div class="panel-ops">
+            <a href="sell.html">
+                <p class="text">Home</p>
+            </a>
+            <a href="amazon.html">
+                <p class="text1">Sell</p>
+            </a>
+            <a href="cart.html">
+                <p class="text2">Cart</p>
+            </a>
+            <a href="mobile.html">
+                <p class="text3">Mobiles</p>
+            </a>
+            <a href="login.html">
+                <p class="text4">Log-In</p>
+            </a>
+            <a href="contact.html">
+                <p class="text5">ContactUs</p>
+            </a>
+        </div>
+        <div class="panel-deals">
+            Shop deals in Electronics
+        </div>
+    </div>
+
+    </header>
+    <div>
+        <div class="groceryshop-container">
+            <div class="groceryshop-groceryshop">
+                <span class="groceryshop-text">
+                    <span>First Name</span>
+                    <input type="text">
+                </span>
+                <span class="groceryshop-text02"><span>Email Id</span><input type="text"></span>
+                <span class="groceryshop-text04"><span>Phone Number</span><input type="text"></span>
+                <span class="groceryshop-text06"><span>Confirm Password</span><input type="text"></span>
+                <span class="groceryshop-text10"><span>Password</span><input type="text"></span>
+                <span class="groceryshop-text12"><span>Gender</span><input type="text"></span>
+                <span class="groceryshop-text14"><span>Last Name</span><input type="text"></span>
+                <span class="groceryshop-text08"><button>Register</button></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
